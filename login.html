@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <center>  
+    <title>I Can Do It</title>
+<link href="html/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src= "C:\Users\user\Documents\login.js">
+</script>
+
+<script>
+function fun()
+{
+var a=document.getElementById('country').value;
+
+if(a==="India")
+{
+var array=["Goa","Delhi","Tamil Nadu"];
+}
+
+else if(a==="USA")
+{
+var array=["washington", "chicago", "newyork"];
+}
+
+else
+{
+var array=[];
+}
+
+
+var string="";
+for(i=0;i<array.length;i++)
+{
+string=string+"<option>"+array[i]+"</option>";
+}
+string="<select name=''>"+string+"</select>";
+document.getElementById('output').innerHTML=string;
+}
+}
+
+</script>
+
+</head>
+
+    <div class="Signup Page">
+<h1>Sign Up </h1>
+
+<body background="C:\Users\user\Documents\html\pexels.jpg"/><br>
+
+<div class="signup-form">
+<form>
+   
+<label for="First Name">First Name:</label>
+<input type="text" value="First name" id="fname"><br><br>
+     
+<label for="Last Name">Last Name:</label>
+<input type="text" value="Last name" id="Lname"><br><br>
+
+<label for="start">Date of Birth:</label>
+
+<input type="date"><br><br>
+
+<label for="Gender">Gender:</label>
+<input type="radio" value="gender" id="male">
+<label for="male">Male</label>
+
+<input type="radio" value="gender" id="female">
+<label for="female">Female</label>
+	
+<input type="radio" value="gender" id="others">
+<label for="others">Others</label><br><br>
+
+
+<label for="City">City:</label>
+<input type="text" value="City" id="City"><br><br>
+
+
+<label for="country">Country:</label>
+<select name="country" id="country" onchange="fun(this.id,'output')">
+<option value="India_states">India</option>
+<option value="USA_states">USA</option>
+</select><br><br>
+
+<div class="f-group">
+<label for="State">State:</label>
+    <select name ="state" id ="output">
+        
+    </select><br><br>
+</div>
+
+<label for="Username">User Name:</label>
+<input type="text" value="username" id="username"><br><br>
+
+<label for="user-password">Password: </label>
+<input type="text" value="password" id="password"><br><br>
+
+
+<label for="EMAIL ID">Email Id:</label>
+<input type="text" value="Email id" id="Email id"><br><br>
+
+
+<button type="button" class="signup-btn">Sign Up</button>
+<button type="button" class="signin-btn">Sign In</button>
+ <a href="#">Forgot Password</a></p>
+</center>
+</form>
+</div>    
+</body>
+</html>

@@ -1,0 +1,72 @@
+ <body>
+{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+background-image: url(C:\Users\user\Documents\html\pexels.jpg");
+background-size: cover;
+background-posistion: center;
+}
+
+.sign-up-form
+{
+position: absolute;
+top: 50%;
+left: 50%;
+width: 350px;
+transform: translate(-50%, -50%);
+
+}
+
+.sign-up-form h1
+{
+margin: 40px 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.sign-up-form p
+{
+margin: 15px 0;
+font-size: 20px;
+}
+
+.signup-form input
+{
+font-size: 16px;
+    padding: 15px 10px;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+}
+.signup-form button {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border: 0;
+    border-color: pink;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.signup-form:hover {
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+#main {
+width: 800px;
+top: 0px;
+position: absolute;
+left: 250px;
+}
+
+
+
